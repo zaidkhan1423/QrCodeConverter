@@ -1,5 +1,7 @@
 package com.zaidkhan.qrcode.view.activity
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
@@ -18,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar!!.setBackgroundDrawable(ColorDrawable(Color.parseColor("#1E88E5")))
+
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.mainContainer) as NavHostFragment
         navController = navHostFragment.navController
         //For Change Action Bar Title According to Fragment
@@ -25,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         //Set Bottom Navigation to NavController
         val bottomNavigationView = binding.bottomNavigationView
         bottomNavigationView.setupWithNavController(navController)
+
     }
 
     //For making back aero button functional

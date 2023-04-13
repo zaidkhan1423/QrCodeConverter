@@ -69,4 +69,8 @@ dependencies {
     implementation 'com.google.dagger:dagger:2.44'
     kapt 'com.google.dagger:dagger-compiler:2.44'
 
+    //webView
+    implementation 'androidx.browser:browser:1.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
 }

@@ -13,6 +13,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
+            app:cardBackgroundColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -36,13 +37,14 @@
             <EditText
                 android:id="@+id/textToQRCode"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="30dp"
+                android:textColor="@color/black"
                 android:background="@drawable/bg_textview"
                 android:gravity="top"
                 android:hint="Please fill in the text here..."
-                android:paddingLeft="10dp"
+                android:padding="12dp"
                 android:paddingTop="10dp" />
 
         </androidx.cardview.widget.CardView>
